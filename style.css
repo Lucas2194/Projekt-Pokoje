@@ -1,0 +1,260 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    text-decoration: none;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    background-color: fff5f6;
+    font-family: 'Rubik Regular';
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.button{
+    width: 100px;
+    padding: 12px;
+    border: 1px solid #77aaaa;
+    font-family: arial;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    border-radius: 84px;
+    background: #aadddd;
+    background: -moz-linear-gradient(top, #aadddd 0%, #77aaaa 100%);
+    background: -webkit-linear-gradient(top, #aadddd 0%, #77aaaa 100%);
+    background: -linear-gradient(top, #aadddd 0%, #77aaaa 100%);
+    box-shadow: 2px 2px 4px 2px rgba(40,40,40, 0.6);
+    display: inline-block;
+}
+
+.button:hover{
+    color: #222;
+    background: white;background: #77aaaa;
+    background: -moz-linear-gradient(bottom, #aadddd 0%, #77aaaa 100%);
+    background: -webkit-linear-gradient(bottom, #aadddd 0%, #77aaaa 100%);
+    background: -linear-gradient(bottom, #aadddd 0%, #77aaaa 100%);
+}
+
+input, textarea{
+    background: rgba(255,255,255,0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893D8;
+    color: black;
+}
+
+@font-face{
+    font-family: 'Rubik Regular';
+    src: url('assets/Rubik-Regular.ttf');
+}
+
+h1,h2,h3,h4{
+    color: #ff6781;
+    font-weight: normal;
+}
+
+p,a,li{
+    color: #ff6781
+}
+
+h1,h3{
+    font-size: 1.5em;
+}
+
+h2{
+    font-size: 1.6em;
+}
+
+.heading-paragraph{
+    font-size: 1.2em;
+    margin: 10px 0;
+    color:darkgoldenrod;
+}
+
+.leading{
+    font-size: 1.2em;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.site-nav{
+    margin: 10 20px;
+}
+
+.site-nav ul{
+    display: none;
+}
+
+.site-nav h1{
+    grid-column: 1/4;
+    grid-row: 1;
+    padding-bottom: 10px;
+    border-bottom: 3px solid black;
+}
+
+#welcome{
+    padding: 0 20px 20px 20px;
+}
+
+.welcome-text{
+    grid-column: 1/7;
+}
+
+.welcome-img{
+    grid-column: 1/9;
+    grid-row: 2;
+}
+
+.welcome-img img{
+    width: 100%;
+}
+
+.welcome-text a{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.welcome-text h2{
+    margin-bottom: 10px;
+}
+
+.zdjecia li{
+    grid-column: 1/9;
+    margin: 20px 0px;
+}
+
+.zdjecia li img{
+    margin: 0 20px;
+    max-width: 100%;
+    align-self: center;
+}
+
+#galeria h3{
+    text-align: center;
+    font-size: 3em;
+    color: black;
+}
+
+#kontakt{
+    padding: 30px 20px;
+    background-color: #ffe9f4;
+}
+
+#kontakt h3, #kontakt p{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+#kontakt form{
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#kontakt input, #kontakt textarea{
+    width: 100%;
+    margin: 10px 0;
+}
+
+#kontakt .button{
+    margin-top: 10px;
+}
+
+.map h3{
+    text-align: center;
+    margin: 20px 20px;
+}
+
+.map ul{
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.map ul>li>iframe{
+    width: 100%;
+    min-height: 480px;
+}
+footer{
+    padding: 30px 20px;
+}
+
+footer .copyright{
+    grid-column: 1/3;
+    font-size: 0.8em;
+}
+
+footer .social{
+    grid-column: 7/9;
+}
+
+footer li{
+    margin: 0 6px;
+}
+
+
+@media screen and (min-width:620px){
+    body{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width:960px){
+    body{
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    body{
+        font-size: 20px;
+    }
+}
+
